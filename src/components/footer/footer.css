@@ -38,6 +38,11 @@
     color: var(--container-color);
     font-size: 1.125rem;
     padding: 0.4rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.5rem;
     display: inline-flex;    
 }
