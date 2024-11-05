@@ -19,7 +19,7 @@ const About = () => {
 
                         <p className="about__description">Desenvolvedor front-end, crio páginas web com HTML, CSS, JS e React JS,sou formado em Front-end e tenho diversos projetos realizados e funcionando.</p>
 
-                        <a download="" href={CV} className="button button--flex">Download CV
+                        <a download="" href={CV} className="button button--flex">Baixar Currículo
                             <svg
                                 class="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"
