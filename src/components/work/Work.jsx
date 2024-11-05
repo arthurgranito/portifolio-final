@@ -6,8 +6,8 @@ const Work = () => {
     return(
         <>
             <section className="work section" id="portfolio">
-                <h2 className="section__title">Portfolio</h2>
-                <span className="section__subtitle">Most recent works</span>
+                <h2 className="section__title">Portifólio</h2>
+                <span className="section__subtitle">Projetos mais recentes</span>
 
                 <Works />
             </section>

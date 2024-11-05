@@ -32,7 +32,7 @@ const Qualification = () => {
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className="linha">
                                     <span className="qualification__rounder"></span>
                                     <span className="qualification__line"></span>
                                 </div>
@@ -41,7 +41,7 @@ const Qualification = () => {
                             <div className="qualification__data">
                                 <div></div>
 
-                                <div>
+                                <div className="linha">
                                     <span className="qualification__rounder"></span>
                                     <span className="qualification__line"></span>
                                 </div>
@@ -57,14 +57,14 @@ const Qualification = () => {
 
                             <div className="qualification__data">
                                 <div>
-                                    <h3 className="qualification__title">Desenvolvimento Web</h3>
+                                    <h3 className="qualification__title desenvolvimento">Desenvolvimento Web</h3>
                                     <span className="qualification__subtitle">Tech4me - Teresópolis</span>
                                     <div className="qualification__calendar">
                                         <i className="uil uil-calendar-alt"></i> 02/2024 - 12/2024
                                     </div>
                                 </div>
 
-                                <div className="trajeto">
+                                <div className="trajeto linha">
                                     <span className="qualification__rounder"></span>
                                     <span className="qualification__line"></span>
                                 </div>
