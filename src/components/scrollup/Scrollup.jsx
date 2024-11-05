@@ -5,7 +5,7 @@ const Scrollup = () => {
     window.addEventListener('scroll', () => {
         const scrollUp = document.getElementById('scrollup');
         if (scrollY >= 560) {
-            scrollUp.style.bottom = '3rem';
+            scrollUp.style.bottom = '3.5rem';
         } else {
             scrollUp.style.bottom = '-20%';
         }
