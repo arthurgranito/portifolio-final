@@ -9,7 +9,7 @@ export const projectsData = [
         id: 1,
         image: Work1,
         title: 'Grajapa - Comida Japonesa',
-        category: 'Api',
+        category: 'API',
         link: 'https://grajapa.vercel.app',
     },
     {
@@ -23,7 +23,7 @@ export const projectsData = [
         id: 3,
         image: Work3,
         title: 'CopoKent - Delivery de Bebidas',
-        category: 'Api',
+        category: 'API',
         link: 'https://copokent.vercel.app',
     },
     {
@@ -50,6 +50,6 @@ export const projectsNav = [
         name: 'Web',
     },
     {
-        name: 'Api',
+        name: 'API',
     },
 ]

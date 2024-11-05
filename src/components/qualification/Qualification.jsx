@@ -64,7 +64,7 @@ const Qualification = () => {
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className="trajeto">
                                     <span className="qualification__rounder"></span>
                                     <span className="qualification__line"></span>
                                 </div>

@@ -109,3 +109,9 @@
         gap: 0.5rem;
     }
   }
+
+  @media screen and (max-width: 330px) {
+    .trajeto{
+        margin-left: -4px;
+    }
+  }
