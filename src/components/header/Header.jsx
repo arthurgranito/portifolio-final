@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import "./header.css";
 
 const Header = () => {
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (scrollY >= 200) {
+            header.style.boxShadow = '0 -1px 4px rgba(0, 0, 0, 0.1)';
+        }
+    });
+
     const [Toggle, showMenu] = useState(false);
 
     const [activeNav, setActiveNav] = useState("#home");
 
     return (
         <>
-            <header className="header">
+            <header className="header" id="header">
                 <nav className="nav container">
                     <a href="index.html" className="nav__logo">Arthur Granito</a>
 

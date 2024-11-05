@@ -7,6 +7,10 @@
     background-color: var(--body-color);
 }
 
+.header__scroll{
+    box-shadow: 1px -4px 5px rgba(0, 0, 0, 0.1);
+}
+
 .menu{
     display: flex;
     align-items: center;
