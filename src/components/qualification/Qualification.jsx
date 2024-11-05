@@ -48,7 +48,7 @@ const Qualification = () => {
 
                                 <div>
                                     <h3 className="qualification__title">Git & Github</h3>
-                                    <span className="qualification__subtitle">Tech4me - Teresópolis</span>
+                                    <span className="qualification__subtitle">Udemy - Teresópolis</span>
                                     <div className="qualification__calendar">
                                         <i className="uil uil-calendar-alt"></i> 02/2024 - 12/2024
                                     </div>

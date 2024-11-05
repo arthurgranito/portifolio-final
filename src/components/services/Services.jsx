@@ -27,7 +27,7 @@ const Services = () => {
                                 <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
                                 <h3 className="services__modal__title">Desenvolvimeto Front-end</h3>
-                                <p className="services__modal-description">Serviço com 1 ano de experiência. Oferecendo trabalho de qualidade a clientes e empresas.</p>
+                                <p className="services__modal-description">Oferecendo trabalho de qualidade a clientes e empresas.</p>
 
                                 <ul className="services__modal-services grid">
                                     <li className="services__modal-service">

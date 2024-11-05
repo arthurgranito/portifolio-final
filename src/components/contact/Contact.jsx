@@ -1,7 +1,20 @@
-import React from "react";
 import "./contact.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_9rwsj1f', 'template_vuke7br', form.current, {
+                publicKey: 'n4z01JkG24_tfTrkq',
+            })
+            e.target.reset();
+    };
+
     return (
         <>
             <section className="contact section" id="contact">
@@ -19,7 +32,7 @@ const Contact = () => {
                                 <h3 className="contact__card-title">Email</h3>
                                 <span className="contact__card-data">arthurcursotecnico@gmail.com</span>
 
-                                <a href="mailto:arthurcursotecico@gmail.com" className="contact__button">Escreva para mim<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                <a href="mailto:arthurcursotecico@gmail.com" className="contact__button" target="_blank">Escreva para mim<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                             </div>
 
                             <div className="contact__card">
@@ -28,7 +41,7 @@ const Contact = () => {
                                 <h3 className="contact__card-title">Whatsapp</h3>
                                 <span className="contact__card-data">+55 (21) 97631-8326</span>
 
-                                <a href="https://api.whatsapp.com/send?phone=21976318326&text=Olá, mais informações!" className="contact__button">Escrevapara mim <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=+5521976318326&text=Olá, mais informações!" className="contact__button" target="_blank">Escrevapara mim <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                             </div>
 
                             <div className="contact__card">
@@ -37,7 +50,7 @@ const Contact = () => {
                                 <h3 className="contact__card-title">Instagram</h3>
                                 <span className="contact__card-data">@arthur.granito</span>
 
-                                <a href="https://www.instagram.com/arthur.granito/" className="contact__button">Escreva para mim <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                <a href="https://www.instagram.com/arthur.granito/" className="contact__button" target="_blank">Escreva para mim <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +58,7 @@ const Contact = () => {
                     <div className="contact__content">
                         <h3 className="contact__title">Me escreva seu projeto</h3>
 
-                        <form className="contact__form">
+                        <form ref={form} onSubmit={sendEmail} className="contact__form">
                             <div className="contact__form-div">
                                 <label className="contact__form-tag">Nome</label>
                                 <input type="text" name="name" className="contact__form-input" placeholder="Insira seu nome" />
@@ -62,7 +75,7 @@ const Contact = () => {
                             </div>
 
                             <button className="button button--flex">
-                               Mande Mensagem
+                                Mande Mensagem
                                 <svg
                                     class="button__icon"
                                     xmlns="http://www.w3.org/2000/svg"

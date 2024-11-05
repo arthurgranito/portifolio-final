@@ -205,6 +205,16 @@
         margin-left: 2rem;
     }
 
+    .home__description{
+        text-align: center;
+    }
+
+    .button__contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .home__subtitle::before {
         width: 40px;
         margin-left: 0.4rem;
